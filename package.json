@@ -4,9 +4,22 @@
   "description": "[Frontend] Установка и настройка полезных инструментов",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:check": "npx eslint index.js",
+    "code:format": "npx prettier --write index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "@sentry/browser": "^8.43.0",
+    "@sentry/tracing": "^7.114.0"
+  }
 }
